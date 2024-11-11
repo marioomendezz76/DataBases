@@ -1,0 +1,5 @@
+CREATE LOGIN dPorti WITH PASSWORD '1234'
+USE testDCL_db 
+CREATE USER dPorti FOR LOGIN dPorti
+
+ALTER ROLE db_datareader ADD MEMBER dPorti
